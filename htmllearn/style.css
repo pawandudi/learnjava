@@ -1,0 +1,111 @@
+ul {
+    background-color: rgb(202, 96, 223);
+    display: flex;
+    justify-content: space-evenly;
+}
+div   {
+    height: 100px;
+    width: 33%;
+    border: 2px solid black;
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px;
+    text-decoration: blue wavy underline;
+    color: rgb(29, 220, 226);
+    display: inline-block;
+    transform: rotate(20deg);
+    transition: transform 0.5s ease-in-out;
+    transform: translate(50px, 100px);
+    animation: coloranimation 5s infinite;
+    /* inline(to take only the space it needs), block(takes the full width), none */
+
+}
+
+@keyframes coloranimation {
+  from {
+    left: 0;
+    background-color: rgb(255, 0, 0);
+
+  }
+  to {
+    left: 200px;
+    background-color: rgb(0, 0, 255);
+  }
+}
+div:hover {
+    transform: rotate(10deg);
+}
+A {
+    text-decoration: none;
+    COLOR: rgb(12, 23, 24);
+    BACKGROUND-COLOR: rgb(61, 194, 218);
+}
+LI {
+    list-style-type: NONE;
+    display: inline-block;
+}
+p{
+    /* 100-900  can bo font-size*/
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: normal;
+    text-align: center;
+    color: rgb(219, 87, 153);
+}
+form{
+    color: rgba(48, 214, 123, 0.8);
+    border-radius: 50%;
+    font-size: 20px;
+    /* 2em(20px)2time of parent fomt size, 2rem(20px)font of root size */
+    /* position: static(defalt),relative(relative to it self),absolute(relative to the nearest positioned ancestor),fixed(relative to the viewport),sticky(behaves like relative until it crosses a specified threshold) */
+/* z index: 1  , no use for static */
+/* unslash */
+}
+button{
+    background-color: #1c27c0;
+    color: rgb(117, 56, 56);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: linear-gradient(to right, #1c27c0, #4a90e2);
+}
+body{
+    background-color: rgb(233, 238, 237);
+    text-align: center;
+
+} 
+#pawan{
+    display: flex;
+    color: rgb(129, 170, 172);
+}
+.myclass{
+    color: rgb(207, 59, 187);
+}
+#contain{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    align-content: center;
+}
+#box1{
+    background-color: rgb(255, 0, 0);
+}
+#box2{
+    background-color: rgb(0, 255, 0);
+    height: 200px;
+    align-self: flex-end;
+    flex-shrink: 0.5;
+}
+#box3{
+    background-color: rgb(0, 0, 255);
+    flex-grow: 1;
+}
+#box4{
+    background-color: rgb(255, 255, 0);
+    flex-basis: 100px;
+}

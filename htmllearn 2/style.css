@@ -1,0 +1,35 @@
+div {
+    height: 100px;
+    align-items: center;
+    width: 150px;
+     background-color: rgb(9, 255, 0);
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    background-color: rgb(255, 0, 0);
+}
+#box1{
+    align-self: center;
+        height: 50px;
+        width: 50px;
+    background-color: rgb(26, 215, 248);
+
+}
+/* @keyframes coloranimation {
+  from {
+
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+
+  }
+  to {
+    width: 200px;
+    background-color: rgb(0, 0, 255);
+  } */
+body {
+    background-color: rgb(202, 96, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
