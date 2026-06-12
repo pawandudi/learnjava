@@ -22,3 +22,17 @@ for ( let i of enteredName) {
 let str = "JavaScript";
 console.log(str.length);
 console.log(str.toUpperCase());
+let arr = [1, 2, 3, 4, 5];
+arr.push(6);
+console.log(arr);
+arr.pop(); 
+arr.splice(2, 1, 10);
+console.log(arr);
+concatArr = arr.concat([7, 8, 9]);
+console.log(concatArr);
+let obj = { name: "Alice", age: 30 };
+console.log(obj);
+obj.city = "New York";
+console.log(obj);
+delete obj.age;
+console.log(obj);
