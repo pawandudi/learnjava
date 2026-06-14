@@ -36,3 +36,28 @@ obj.city = "New York";
 console.log(obj);
 delete obj.age;
 console.log(obj);
+function greet(person) {
+    return "Hello, " + person + "!";
+}
+console.log(greet("Bob"));
+const sum = (a, b) => {
+    return a + b;
+}
+console.log(sum(5, 10));
+arr.forEach(function printvalue(value) {
+    console.log(value);
+});  
+let doubledArr = arr.map((value) => {
+    return value * 2;
+});
+console.log(doubledArr);
+
+let evenNumbers = arr.filter((value) => {
+    return value % 2 === 0;
+});
+console.log(evenNumbers);
+let arr2 = [1, 2, 3, 4, 5];
+let total = arr2.reduce((prev, currentValue) => {
+    return prev + currentValue;
+});
+console.log(total);
