@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>hello {{ name }}</h1>
+    {% if is_topper %}
+        <p>Congratulations! You are the topper of the class.</p>
+    {% else %}
+        <p>Keep up the good work! You are doing great.</p>
+    {% endif %}
+    <h2>Subjects:</h2>
+    <ul>
+        {% for subject in subjects %}
+            <li>{{ subject }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> 
